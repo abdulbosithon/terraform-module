@@ -7,3 +7,8 @@ module "app-vpc" {
       "Name" = "app"
   }
 }
+
+module "app-server" {
+  source = "git::https://github.com/abdulbosithon/terraform-module.git//CHILD/EC2"
+  
+}
